@@ -1,11 +1,11 @@
 import gradio as gr  
 
 def generate_video(image):  
-    return "video.mp4"  # Demo function  
+    return "demo.mp4"  # Temporary fix  
 
 gr.Interface(  
     fn=generate_video,  
     inputs=gr.Image(),  
     outputs=gr.Video(),  
-    title="🚀 My Video Generator"  
-).launch()  
+    title="VIDEO GENERATOR"  
+).launch(server_name="0.0.0.0", server_port=8080)  
